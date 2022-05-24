@@ -1,35 +1,53 @@
-body{
-    background-color: #f2f2f2;
-    font: 1em sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
-.grid{ 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1em;
-    margin: 1em;
+header {
+    width: 100%;
+    height: 650px;
+    background-image: url(Fondo.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: rgb(56, 51, 51);
+    text-align: center;
 }
 
-.container{
-    min-height: 60px;
-    position: fixed;
-    display: flex;
-    alinght-items: center;
-    justify-content: space-between;
-    pading: 0 20px;
-    padding-left: 10px;
-    top: 0;
+.sesgoabajo {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
     left: 0;
-    right: 0;
-    z-index: 1;
-    background: rgb(0, 0, 0);
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
 }
 
-.titulo{
-    font-family: 'Monoton', cursive;
-    font-size: 30px;
-    margin-top: 5px;
-    cursor: pointer;
+header .textos {
+    margin-top: 155px;
+}
+
+header .titulo {
+    font-size: 85px;
+}
+
+header .subtitulo {
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
 }
