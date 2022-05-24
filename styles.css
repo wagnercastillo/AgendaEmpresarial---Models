@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Teko:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -43,12 +44,14 @@ header .textos {
 
 header .titulo {
     font-size: 85px;
+    font-family: 'Teko', sans-serif;
 }
 
 header .subtitulo {
     font-size: 42px;
     font-weight: 300;
     margin-bottom: 32px;
+    font-family: 'Amatic SC', cursive;
 }
 
 .textos, .titulo, .subtitulo{
@@ -69,16 +72,24 @@ header .subtitulo {
 .container-2{
     display: grid;
     grid-template-rows: 5fr;
-    grid-gap: 20%;
+    grid-gap: 15%;
     margin-left: 10%;
     margin-right: 10%;
 }
 
 p{
     text-align: justify;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
 }
 
 h4{
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.columnas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20%;
 }
